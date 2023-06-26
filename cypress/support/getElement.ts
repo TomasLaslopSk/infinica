@@ -1,0 +1,30 @@
+export class GetElement {
+
+    static getIdSelector(selector: string | number) {
+      return cy.get(`[data-cy=${selector}]`)
+    }
+  
+    static getXpathSelector(selector: string) {
+      return cy.get(selector)
+    }
+
+    static getIdSelectorContainsText(selector: string | number, text: string) {
+      return cy.get(`[data-cy=${selector}]`).contains(text)
+    }
+  
+    // static getContextSelector(selector: string, context: string, elementType: string) {
+    //   return cy.get(context).contains("label", selector).siblings(elementType)
+    // }
+  
+    // static getSiblingSelector(selector: string, elementType: string) {
+    //   return cy.contains("label", selector).siblings(elementType)
+    // }
+  
+    // static getChildSelector(selector: string, childSelector:string, order: number) {
+    //   return cy.get(selector).eq(order).find(childSelector)
+    // }
+  
+    // static getElementFromListByIndexSelector(selector: string, order: number) {
+    //   return cy.get(selector).eq(order)
+    // }
+  }

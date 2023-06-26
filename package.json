@@ -1,0 +1,24 @@
+{
+  "name": "infinica_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasLaslopSk/infinica.git"
+  },
+  "author": "Tomas Laslop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasLaslopSk/infinica/issues"
+  },
+  "homepage": "https://github.com/TomasLaslopSk/infinica#readme",
+  "devDependencies": {
+    "cypress": "^12.16.0",
+    "typescript": "^5.1.3"
+  }
+}
