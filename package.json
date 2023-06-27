@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/TomasLaslopSk/infinica#readme",
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.4",
     "cypress": "^12.16.0",
     "typescript": "^5.1.3"
   }

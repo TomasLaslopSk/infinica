@@ -1,3 +1,5 @@
+import './commands'
+
 const log = Cypress.log
 Cypress.log = function (options, ...args) {
   if (options.displayName === 'script' || options.name === 'request') return

@@ -1,3 +1,5 @@
+import { GetElement } from "./getElement";
+
 export class ElementActions {
 
   static navigate(
