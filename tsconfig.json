@@ -15,5 +15,6 @@
     "strict": true,                                      /* Enable all strict type-checking options. */
     "skipLibCheck": true,    
     "allowJs": true                        /* Skip type checking all .d.ts files. */
-  }
+  },
+  "include": ["**/*.ts", "cypress/support/commands.ts"]
 }
