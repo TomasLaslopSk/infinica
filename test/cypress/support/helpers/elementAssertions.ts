@@ -26,7 +26,7 @@ export class ElementAssertions {
       }
     }
 
-    static assertUrl(subUrl: string) {
-      cy.url().should('contain', `${Cypress.config('baseUrl')}${subUrl}`)
+    static assertUrl(url: string) {
+      cy.url().should('contain', url)
     }
   }

@@ -6,7 +6,6 @@ export default defineConfig({
     videosFolder: "test/cypress/videos",
 
   e2e: {
-    baseUrl: 'https://infinica-training.cloud.infinica.com/infinica-business-designer/',
     supportFile: 'test/cypress/support/e2e.ts',
     setupNodeEvents(on, config) {
     },

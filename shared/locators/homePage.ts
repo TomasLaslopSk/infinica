@@ -44,5 +44,13 @@ export enum homePageIds {
     emptyList = ".fo-list-empty",
 
     // Editor
-    editorImageIconPicture = "//div[@data-cy='app-editor']//*[@data-cy='icon-picture']"
+    editorImageIconPicture = "//div[@data-cy='app-editor']//*[@data-cy='icon-picture']",
+
+
+    // New ones from PLW
+    contextItemDelete = 'context-item-DELETE',
+    closeFilePicker = 'close-file-picker-dialog',
+    fileNameInput = 'file-picker-file-input',
+    emptyText = "span.fo-contents.empty",
+    outlineNodeListCss = "div[data-cy='outline-node-list']"
 }

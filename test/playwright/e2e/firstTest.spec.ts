@@ -42,7 +42,6 @@ describe("Test Suite 1", () => {
         await elementActions.pressElement(homePagePwIds.saveTemplateButton)
         await elementActions.enterValueToElement(homePagePwIds.fileNameInput, 'TestTemplate')
         await elementActions.pressElement(homePagePwIds.filePickerOpenButton)
-        // await elementActions.pressElement(homePagePwIds.confirmButton)
 
         // Insert text to first block
         await elementActions.dragTo(homePagePwIds.paletteBtnText, homePagePwIds.emptyBlock)

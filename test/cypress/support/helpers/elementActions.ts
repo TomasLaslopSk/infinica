@@ -1,3 +1,6 @@
+import { homePageIds } from "../../../../shared/locators/homePage";
+import { GetElement } from "./getElement";
+
 export class ElementActions {
 
   static navigate(
@@ -162,6 +165,39 @@ export class ElementActions {
     target
       .trigger("mousemove") // optional
       .click({ force: true });
+  }
+
+  static conditionalDeleteTemplate() {
+    return new Promise<void>((resolve, reject) => {
+      cy.get(`[data-cy=${homePageIds.openFile}]`).click()
+      cy.wait(1000)
+      cy.contains('span', 'TestTemplate.itx')
+        // prevent previous line assertion from triggering
+        .should((_) => {})
+        .then(($element) => {
+            if (!($element || []).length) {
+              reject();
+            } else {
+              cy.xpath("(//span[@data-cy='file-picker-node-name'][text()='TestTemplate.itx'])").rightclick()
+              cy.get(`[data-cy=${homePageIds.contextItemDelete}]`).click()
+              cy.get(`[data-cy=${homePageIds.confirmButton}]`).click()
+              resolve();
+            }
+      })
+    })
+  }
+
+  static conditionalCloseFilePicker() {
+    return new Promise<void>((resolve, reject) => {
+      cy.get(`[data-cy=${homePageIds.closeFilePicker}]`).its('length').then(res => {
+        if (res > 0) {
+          cy.get(`[data-cy=${homePageIds.closeFilePicker}]`).click()
+          resolve();
+        } else {
+          reject();
+        }
+      })
+    })
   }
 
 }
