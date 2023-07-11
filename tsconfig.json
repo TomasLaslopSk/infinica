@@ -6,7 +6,7 @@
 
     /* Modules */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    "types": ["cypress", "@4tw/cypress-drag-drop"],                                /* Specify type package names to be included without being referenced in a source file. */
+    "types": ["cypress", "@4tw/cypress-drag-drop", "node"],                                /* Specify type package names to be included without being referenced in a source file. */
    
     "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
@@ -16,5 +16,5 @@
     "skipLibCheck": true,    
     "allowJs": true                        /* Skip type checking all .d.ts files. */
   },
-  "include": ["**/*.ts", "cypress/support/commands.ts"]
+  "include": ["**/*.ts", "test/cypress/support/commands.ts"]
 }

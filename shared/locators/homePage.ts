@@ -41,5 +41,8 @@ export enum homePageIds {
     // Css
     editorMainWindow = ".itx-editor",
     emptyBlock = ".fo-block-empty",
-    emptyList = ".fo-list-empty"
+    emptyList = ".fo-list-empty",
+
+    // Editor
+    editorImageIconPicture = "//div[@data-cy='app-editor']//*[@data-cy='icon-picture']"
 }

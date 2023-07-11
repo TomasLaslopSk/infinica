@@ -1,10 +1,9 @@
-import { first } from "cypress/types/lodash"
-import { Credentials } from "../support/credentials"
+import { Credentials } from "../../../shared/credentials"
 import { ElementActions } from "../support/helpers/elementActions"
 import { ElementAssertions } from "../support/helpers/elementAssertions"
 import { GetElement } from "../support/helpers/getElement"
-import { homePageIds } from "../support/locators/homePage"
-import { landingPageIds } from "../support/locators/landingPage"
+import { homePageIds } from "../../../shared/locators/homePage"
+import { landingPageIds } from "../../../shared/locators/landingPage"
 import { TestCase, TestStep } from "../support/helpers/testCase"
 
 

@@ -69,7 +69,6 @@ export class ElementActions {
   }
 
   static dragTo1(selector: Cypress.Chainable<JQuery<HTMLElement>>, target: Cypress.Chainable<JQuery<HTMLElement>>) {
-    const dataTransfer = new DataTransfer();
     selector
       .trigger('dragstart')
       .trigger("dragleave");

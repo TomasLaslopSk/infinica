@@ -8,9 +8,9 @@ export class GetElement {
       return cy.get(selector)
     }
 
-    static getXpathSelector(selector: string) {
-      return cy.xpath(selector)
-    }
+    // static getXpathSelector(selector: string) {
+    //   return cy.xpath(selector)
+    // }
 
     static getIdSelectorOnPosition(selector: string, position: number) {
       return cy.get(`[data-cy=${selector}]`).eq(position)
@@ -20,9 +20,9 @@ export class GetElement {
       return cy.get(selector).eq(position)
     }
 
-    static getXpathSelectorOnPosition(selector: string, position: number) {
-      return cy.xpath(selector).eq(position)
-    }
+    // static getXpathSelectorOnPosition(selector: string, position: number) {
+    //   return cy.xpath(selector).eq(position)
+    // }
 
     static getIdSelectorContainsText(selector: string | number, text: string) {
       return cy.get(`[data-cy=${selector}]`).contains(text)
